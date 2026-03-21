@@ -71,6 +71,27 @@ body {
     100% { background-position-x: 1000px; }
 }
 
+/* --- サーフボード装飾 --- */
+.surf-decoration {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 240px;
+    transform: rotate(15deg);
+    z-index: 50;
+    opacity: 0.9;
+    filter: drop-shadow(4px 4px 6px rgba(0,0,0,0.15));
+    animation: floating 4s ease-in-out infinite;
+    pointer-events: none; /* クリック邪魔防止 */
+}
+
+@keyframes floating {
+    0% { transform: rotate(15deg) translateY(0px); }
+    50% { transform: rotate(18deg) translateY(-10px); }
+    100% { transform: rotate(15deg) translateY(0px); }
+}
+
 /* --- アプリのメインコンテナ（グラスモーフィズム） --- */
 .app-container {
     background: var(--glass-white);
