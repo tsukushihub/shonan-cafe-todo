@@ -1,0 +1,7 @@
+# セキュリティおよび不要なファイルの除外設定
+.env
+.env.*
+node_modules/
+.DS_Store
+*.log
+Thumbs.db

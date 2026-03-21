@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shonan Cafe Todo</title>
+    <!-- 丸みがあって可愛いフォントを読み込みます -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- 素敵なアイコンフォント (Google Material Symbols) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ocean-background">
+        <!-- 波のアニメーション用 -->
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <h1><span class="material-symbols-rounded logo-icon">local_cafe</span> Shonan Todo</h1>
+            <p class="subtitle">波の音を聴きながら、今日のタスクを。</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <input type="text" id="todo-input" placeholder="次は何をする？">
+                <button id="add-button" class="add-btn">
+                    <span class="material-symbols-rounded">add</span>
+                </button>
+            </div>
+
+            <div class="todo-list-container">
+                <ul id="todo-list" class="todo-list">
+                    <!-- JavaScriptでタスクがここに追加されます -->
+                </ul>
+                <div class="empty-state" id="empty-state">
+                    <span class="material-symbols-rounded empty-icon">waves</span>
+                    <p>今はタスクがありません。<br>ゆっくりコーヒーでも飲みましょう。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
